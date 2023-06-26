@@ -24,7 +24,7 @@ namespace eMovie_Ticket.Data.Services
             _context.Remove(result);
             await _context.SaveChangesAsync();
         }
-
+        //need to be deleted
         public async Task<IEnumerable<Actor>> GetActorsAsync()
         {
             var result = await _context.Actors.ToListAsync();
