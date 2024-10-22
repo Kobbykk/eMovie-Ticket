@@ -1,10 +1,10 @@
-name: Build and deploy .NET Core application to Web App eMovieTicket
+name: Build and deploy .NET Core application to Web App eMovieTicket236
 on:
   push:
     branches:
     - master
 env:
-  AZURE_WEBAPP_NAME: eMovieTicket
+  AZURE_WEBAPP_NAME: eMovieTicket236
   AZURE_WEBAPP_PACKAGE_PATH: .\published
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 8.0.x
@@ -44,5 +44,5 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
-        publish-profile: ${{ secrets.eMovieTicket_47EC }}
+        publish-profile: ${{ secrets.eMovieTicket236_FE02 }}
         package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
