@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'Edwin-Addai'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D2F0DB6E9BF3494AA58229500D3A890E }}
-          package: .
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
+          package: .Net8
