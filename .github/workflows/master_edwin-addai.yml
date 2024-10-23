@@ -54,4 +54,4 @@ jobs:
           app-name: 'Edwin-Addai'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
-          package: net8.0
+          package: .
